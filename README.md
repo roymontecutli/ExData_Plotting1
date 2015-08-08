@@ -112,3 +112,12 @@ The four plots that you will need to construct are shown below.
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
+## Solution proposed
+
+### Workflow
+* All the plot scripts will invoke first the utilities script.
+* The <strong>Utilities</strong> script will verify if the folders for input and outout are already created, if not it will created.
+* The <strong>Utilities</strong> script will also download the data and uncompress.
+* Due performance concern, and as for this example the studied range is fixed for all the graphs, once that the filtered data is computed, this will be kept in memory and reused by the other scripts.
+* With the data, it is displayed as the examples provided.
+* All the generated graphs will be saved in the <strong>output</strong> folder.
